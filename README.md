@@ -9,3 +9,7 @@ It is inspired by [bettermotherfuckingwebsite.com](http://bettermotherfuckingweb
 I'm using [Fork Awesome](https://forkaweso.me/Fork-Awesome/) for the icons.
 
 Feel free to open issues if you encounter any, or open pull requests if you have any improvements.
+
+## Format
+
+After installing prettier with `npm i` formatting can be done with the command `npm run format`.
