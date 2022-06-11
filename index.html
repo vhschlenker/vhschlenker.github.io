@@ -17,46 +17,60 @@
 				color: #444;
 				padding: 0 10px;
 			}
+
 			@media (prefers-color-scheme: dark) {
 				body {
 					color: #eee;
 					background: #222;
 				}
 			}
+
 			h1,
 			h2,
 			h3 {
 				line-height: 1.2;
 			}
+
 			h2 {
 				font-size: 1.2em;
 			}
+
 			.hidden-dots {
 				list-style-type: none;
 			}
+
 			.hidden-dots li a {
 				margin-left: 0.5rem;
 			}
+
 			a {
 				color: #0d6efd;
+			}
+
+			.imprint {
+				display: none;
+			}
+
+			#show_imprint:checked ~ .imprint {
+				display: inherit;
 			}
 		</style>
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-			integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+			href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+			integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
 			crossorigin="anonymous"
 		/>
 	</head>
+
 	<body>
 		<header>
 			<h1>Veit-Hendrik Schlenker</h1>
 			<p><b>Softwareentwickler</b></p>
 		</header>
 		<p>
-			Moin, ich bin Veit. Student und Softwareentwickler. Momentan arbeite ich
-			viel mit Java, Kotlin und Type/JavaScript. Interessieren tue ich mich für
-			App-Entwicklung und Softwarearchitekturen.
+			Moin, ich bin Veit. Softwareentwickler. Momentan arbeite ich viel mit
+			Java, Kotlin und Type-/JavaScript in React und Angular.
 		</p>
 		<h2>Links</h2>
 		<ul class="hidden-dots">
@@ -84,21 +98,26 @@
 			</li>
 		</ul>
 		<p>
-			Diese Code zu Webseite ist unter der MIT Lizens in
+			Der Code zu dieser Webseite ist unter der MIT-Lizenz auf
 			<a href="https://github.com/vhschlenker/vhschlenker.github.io">
 				GitHub verfügbar
 			</a>
 			.
 		</p>
-		<h2>Impressum</h2>
-		<p>
-			<strong>Anbieter: </strong><br />
-			Veit-Hendrik Schlenker <br />
+		<br />
+		<label for="show_imprint">Impressum anzeigen</label>
+		<input type="checkbox" id="show_imprint" />
+		<div class="imprint">
+			<h2>Impressum</h2>
+			<p>
+				<strong>Anbieter: </strong><br />
+				Veit-Hendrik Schlenker <br />
 
-			<strong>Kontakt: </strong><br />
-			Telefon: 040-23969682 <br />
-			E-Mail: mail (a-t) vhschlenker.de <br />
-			Website: vhschlenker.de<br />
-		</p>
+				<strong>Kontakt: </strong><br />
+				Telefon: 040-23969682 <br />
+				E-Mail: mail (a-t) vhschlenker.de <br />
+				Website: vhschlenker.de<br />
+			</p>
+		</div>
 	</body>
 </html>
