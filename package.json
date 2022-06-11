@@ -6,6 +6,9 @@
     "type": "git",
     "url": "git+https://github.com/vhschlenker/vhschlenker.github.io.git"
   },
+  "scripts": {
+    "format": "prettier --write ."
+  },
   "author": "vhschlenker",
   "license": "MIT",
   "bugs": {
